@@ -1,0 +1,22 @@
+[project]
+name = "py-yr2-cp-2"
+version = "0.1.0"
+description = "Контрольная точка 2. Списки"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[project.scripts]
+hexlet-python-package = "contest.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["contest"]
